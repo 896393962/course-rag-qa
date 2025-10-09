@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ml-week1",
+    "title": "机器学习导论课件",
+    "source": "机器学习课程资料",
+    "metadata": {"user_id": "demo", "course_id": "ML101", "file_id": "week1", "doc_type": "lecture"},
+    "content": "监督学习通过带标签样本学习输入到输出的映射，典型任务包括分类和回归。训练集用于拟合模型，验证集用于调参，测试集用于评估泛化能力。过拟合表现为训练误差低而测试误差高，可通过正则化、交叉验证和增加数据缓解。"
+  },
+  {
+    "id": "ml-regularization",
+    "title": "正则化与模型选择讲义",
+    "source": "机器学习课程资料",
+    "metadata": {"user_id": "demo", "course_id": "ML101", "file_id": "week3", "doc_type": "lecture"},
+    "content": "L1 正则化倾向于产生稀疏参数，L2 正则化通过惩罚大权重提升模型稳定性。交叉验证常用于选择正则化系数、树深度和学习率等超参数，验证集表现比训练集更能反映泛化能力。"
+  },
+  {
+    "id": "ml-tree-ensemble",
+    "title": "决策树与集成学习实验",
+    "source": "机器学习实验指导书",
+    "metadata": {"user_id": "demo", "course_id": "ML101", "file_id": "tree-lab", "doc_type": "lab"},
+    "content": "决策树通过特征划分降低样本不纯度，常见指标包括信息增益、信息增益率和基尼指数。随机森林通过样本和特征随机化降低方差，梯度提升树通过逐步拟合残差提升预测能力。"
+  },
+  {
+    "id": "dl-backprop",
+    "title": "神经网络反向传播复习资料",
+    "source": "深度学习复习文档",
+    "metadata": {"user_id": "demo", "course_id": "DL202", "file_id": "backprop", "doc_type": "review"},
+    "content": "反向传播利用链式法则计算损失函数对每一层参数的梯度。常见优化器包括 SGD、Momentum、Adam。梯度消失可以通过残差连接、归一化、合适初始化和激活函数选择缓解。"
+  },
+  {
+    "id": "dl-cnn",
+    "title": "卷积神经网络课件",
+    "source": "深度学习课程资料",
+    "metadata": {"user_id": "demo", "course_id": "DL202", "file_id": "cnn", "doc_type": "lecture"},
+    "content": "卷积层通过局部连接和参数共享提取空间特征，池化层降低特征图尺寸并增强平移不变性。CNN 在图像分类、目标检测和医学影像分析中常用。"
+  },
+  {
+    "id": "dl-transformer-training",
+    "title": "大模型训练与微调讲义",
+    "source": "深度学习课程资料",
+    "metadata": {"user_id": "demo", "course_id": "DL202", "file_id": "llm-train", "doc_type": "lecture"},
+    "content": "大模型训练通常包括预训练、指令微调和偏好对齐。LoRA 通过低秩矩阵注入可训练参数，显著降低微调显存开销。训练日志需要记录 loss、学习率、batch size 和 checkpoint。"
+  },
+  {
+    "id": "rag-lab",
+    "title": "RAG 知识库问答实验说明",
+    "source": "大模型应用开发实验指导书",
+    "metadata": {"user_id": "demo", "course_id": "LLM201", "file_id": "rag-lab", "doc_type": "lab"},
+    "content": "RAG 系统一般包括文档解析、切分、向量化、召回、重排和生成六个环节。切分时应保留标题、页码和来源等元数据，方便答案引用溯源。召回 TopK 片段后，Prompt 应要求模型仅依据上下文回答，并输出引用编号。"
+  },
+  {
+    "id": "rag-evaluation",
+    "title": "RAG 检索评估与指标",
+    "source": "大模型应用开发课程资料",
+    "metadata": {"user_id": "demo", "course_id": "LLM201", "file_id": "rag-eval", "doc_type": "lecture"},
+    "content": "检索评估常用 HitRate、MRR、NDCG 和 Recall@K。MRR 关注第一个相关文档的排名，NDCG 关注多级相关性和排序质量。构建评估集时应包含查询、过滤条件和相关文档标注。"
+  },
+  {
+    "id": "agent-workflow",
+    "title": "Agent Workflow 与工具调用",
+    "source": "大模型应用开发课程资料",
+    "metadata": {"user_id": "demo", "course_id": "LLM201", "file_id": "agent-workflow", "doc_type": "lecture"},
+    "content": "Agent 工作流通常包含规划、工具调用、观察结果、反思和最终回答。LangGraph 可以用 StateGraph 显式建模节点、边和状态，使多步骤推理过程更可控。"
+  },
+  {
+    "id": "transformer-review",
+    "title": "Transformer 与注意力机制复习资料",
+    "source": "自然语言处理复习文档",
+    "metadata": {"user_id": "demo", "course_id": "NLP301", "file_id": "transformer", "doc_type": "review"},
+    "content": "Transformer 使用自注意力机制建模序列中任意两个位置的依赖关系。多头注意力允许模型在不同子空间关注不同语义关系。位置编码用于向模型注入词序信息，前馈网络负责逐位置非线性变换。"
+  },
+  {
+    "id": "nlp-bert",
+    "title": "BERT 预训练模型讲义",
+    "source": "自然语言处理课程资料",
+    "metadata": {"user_id": "demo", "course_id": "NLP301", "file_id": "bert", "doc_type": "lecture"},
+    "content": "BERT 采用双向 Transformer Encoder，通过 Masked Language Modeling 和 Next Sentence Prediction 进行预训练。下游任务可以通过微调分类头完成文本分类、序列标注和问答。"
+  },
+  {
+    "id": "nlp-retrieval",
+    "title": "语义检索与向量表示实验",
+    "source": "自然语言处理实验指导书",
+    "metadata": {"user_id": "demo", "course_id": "NLP301", "file_id": "semantic-search", "doc_type": "lab"},
+    "content": "语义检索使用 embedding 将文本映射到向量空间，通过余弦相似度或内积衡量语义接近程度。向量召回适合语义相近但关键词不同的问题，关键词检索适合精确术语匹配。"
+  }
+]
