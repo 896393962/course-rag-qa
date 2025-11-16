@@ -1,0 +1,15 @@
+[
+  {"query": "RAG 系统为什么要保留引用编号？", "filters": {"user_id": "demo", "course_id": "LLM201"}, "relevance": {"rag-lab": 3}},
+  {"query": "RAG 系统包括哪些核心环节？", "filters": {"user_id": "demo", "course_id": "LLM201"}, "relevance": {"rag-lab": 3}},
+  {"query": "如何评价 RAG 检索效果？", "filters": {"user_id": "demo", "course_id": "LLM201"}, "relevance": {"rag-evaluation": 3}},
+  {"query": "Agent 工作流为什么要显式记录状态？", "filters": {"user_id": "demo", "course_id": "LLM201"}, "relevance": {"agent-workflow": 3}},
+  {"query": "过拟合是什么，怎么缓解？", "filters": {"user_id": "demo", "course_id": "ML101"}, "relevance": {"ml-week1": 3, "ml-regularization": 2}},
+  {"query": "L1 和 L2 正则化有什么区别？", "filters": {"user_id": "demo", "course_id": "ML101"}, "relevance": {"ml-regularization": 3}},
+  {"query": "随机森林如何降低方差？", "filters": {"user_id": "demo", "course_id": "ML101"}, "relevance": {"ml-tree-ensemble": 3}},
+  {"query": "反向传播如何计算梯度？", "filters": {"user_id": "demo", "course_id": "DL202"}, "relevance": {"dl-backprop": 3}},
+  {"query": "CNN 的卷积层和池化层有什么作用？", "filters": {"user_id": "demo", "course_id": "DL202"}, "relevance": {"dl-cnn": 3}},
+  {"query": "LoRA 为什么能降低微调成本？", "filters": {"user_id": "demo", "course_id": "DL202"}, "relevance": {"dl-transformer-training": 3}},
+  {"query": "Transformer 为什么需要位置编码？", "filters": {"user_id": "demo", "course_id": "NLP301"}, "relevance": {"transformer-review": 3}},
+  {"query": "BERT 的预训练任务是什么？", "filters": {"user_id": "demo", "course_id": "NLP301"}, "relevance": {"nlp-bert": 3}},
+  {"query": "语义检索和关键词检索有什么区别？", "filters": {"user_id": "demo", "course_id": "NLP301"}, "relevance": {"nlp-retrieval": 3}}
+]
